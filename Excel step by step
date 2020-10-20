@@ -1,11 +1,12 @@
 Downloaded incarceration rate for Baltimore, MD from Opportunity Atlas
 Using the tract numbers for VLOOKUP, I combined teenage birth rate, poverty rate, fraction of non-white, and median rent
-Then I normalized the data by calculating the z score by using STANDARDIZE function ( to do use this function, I had to calculate both mean (Funciton: AVERAGE) and the standard deviation (Function: STDEV) for each factors. 
-Then I assigned numbers strating from 1 for each of the tract numbers. Next, I created four anchors on the top of the excel sheet, and put random numbers. And based on the numbers, I used VLOOKUP to assign anchor number, name, tract number, z incarceration, z teenage birth rate, z poverty rate, z non-white, and z median rent. 
-And i calculated the distance^2 to 1 to 4 by using the SUMXMY2 function. And then sorted out the min distance for each tract number by using function MIN. 
-For anchor column, i used the MATCH function to match the min distance to the right anchor
+Then I normalized the data by calculating the z score by using STANDARDIZE function (to do use this function, I had to calculate both mean (Function: AVERAGE) and the standard deviation (Function: STDEV) for each factor. 
+Then I assigned numbers starting from 1 for each of the tract numbers. Next, I created four anchors on the top of the excel sheet and put random numbers. And based on the numbers, I used VLOOKUP to assign anchor number, name, tract number, z incarceration, z teenage birth rate, z poverty rate, z non-white, and z median rent. 
+And I calculated the distance^2 to 1 to 4 by using the SUMXMY2 function. And then sorted out the min distance for each tract number by using function MIN. 
+For anchor column, I used the MATCH function to match the min distance to the right anchor
 Then I added all the min distance and named sum of dis^2
-Then i used the solver function to make the sum of dis^2 to the minimum while changing the # (numbers that i assigned randomly). 
-And to see how many number of tracts belong to each anchor, I used COUNTIF function. 
-For the histogram, i selected the cluster analysis box on top (only the factors column) and then created a histogram
-For the pie chart, i selected the anchor column and number of tracts column.
+Then I used the solver function to make the sum of dis^2 to the minimum while changing the # (numbers that I assigned randomly). 
+And to see how many numbers of tracts belong to each anchor, I used COUNTIF function. 
+For the histogram, I selected the cluster analysis box on top (only the factors column) and then created a histogram
+For the pie chart, I selected the anchor column and number of tracts column.
+
